@@ -10,7 +10,7 @@ class DB
   private $errors = null;
   public $db_conn;
 
-  public function __construct($dsn = 'mysql:dbname=bdcontro_oleg;host=***',$user = '***',$password = '***'){
+  public function __construct($dsn = 'mysql:dbname=***;host=***',$user = '***',$password = '***'){
     try{
      $this->dsn = $dsn;
      $this->user = $user;
@@ -76,7 +76,6 @@ class DB
   }else{
     $this->db_conn->rollback();
     $this->errors[] = "Ошибка при удалении";
-    //var_dump($errors);
   }
 }
 }
@@ -84,4 +83,4 @@ $db = new DB();
 //$db->insertData('jhgjhg','555','jj','fdsf','fdsfd','fds');
 //$db->updateData(2,'da','sda','messi','as','ew',['products' => 'jbkkg']);
 //$db->deleteData(3);
-$db->getData();
+//$db->getData();

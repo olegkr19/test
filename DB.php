@@ -80,7 +80,3 @@ class DB
 }
 }
 $db = new DB();
-//$db->insertData('jhgjhg','555','jj','fdsf','fdsfd','fds');
-//$db->updateData(2,'da','sda','messi','as','ew',['products' => 'jbkkg']);
-//$db->deleteData(3);
-//$db->getData();

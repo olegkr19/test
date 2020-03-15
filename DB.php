@@ -10,7 +10,7 @@ class DB
   private $errors = null;
   public $db_conn;
 
-  public function __construct($dsn = 'mysql:dbname=bdcontro_oleg;host=bdcontro.mysql.tools',$user = 'bdcontro_oleg',$password = 'Zo+;25Fr2d'){
+  public function __construct($dsn = 'mysql:dbname=bdcontro_oleg;host=***',$user = '***',$password = '***'){
     try{
      $this->dsn = $dsn;
      $this->user = $user;

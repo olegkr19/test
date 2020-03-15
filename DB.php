@@ -70,7 +70,7 @@ class DB
     if($this->errors == null){
     $sql = "DELETE FROM $this->table_name WHERE client_id=:id";
     $stm = $this->db_conn->prepare($sql);
-    $stm->bindParam(':id',$id2,PDO::PARAM_INT);
+    $stm->bindParam(':id',$id,PDO::PARAM_INT);
     $stm->execute();
     $this->db_conn->commit();
   }else{
